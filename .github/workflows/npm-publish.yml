@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  publish-npm:
+  publish-npm: # publish to npmjs
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -30,9 +30,9 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-  publish-gpr:
+  publish-gpr: # publish to github package repo
     needs: build
     runs-on: ubuntu-latest
     steps:
