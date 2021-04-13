@@ -135,6 +135,13 @@ module.exports = {
         },
       },
     ],
+
+    // Sort RN styles, this will sort typed stylenames and style props in alphabetic order
+    'react-native/sort-styles': [
+      'error',
+      'asc',
+      { ignoreClassNames: false, ignoreStyleProperties: false },
+    ],
   },
   settings: {
     'import/resolver': {
