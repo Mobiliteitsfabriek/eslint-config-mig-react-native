@@ -91,13 +91,15 @@ rules: {
 You’ll need an account on npmjs.com and that has access to this package.
 Account needs 2FA enabled for authorization & publishing.
 
-### Step 1 - Bump version
+### Step 1 - Create a new branch
 
 Create a new branch in which you bump the version and use the following naming convention:
 
 ```
 version/1.2.3
 ```
+
+### Step 2 - Bump version
 
 In your new branch you'll also need to update [CHANGELOG.md](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/blob/main/CHANGELOG.md). Move everything from [Unreleased] to the new version that you're creating. Using `npm version` you can bump the version.
 
@@ -107,7 +109,7 @@ npm version [<newversion> | major | minor | patch | premajor | preminor | prepat
 
 Push your new branch and create a PR, **wait for it being approved and merged before proceeding with the next steps.**
 
-### Step 2 - Create draft release
+### Step 3 - Create draft release
 
 Go to [releases](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/releases) and create a new draft release. Make sure the version number is the same as in step 1! In here you can also edit the release note and publish it.
 
