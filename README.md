@@ -84,6 +84,31 @@ rules: {
 6. Use the warnings to ensure the correct code style is used with any new features and changes.
 7. One by one, remove the custom rules and refactor the codebase as required. You could create stories for each of them and plan in one or two every sprint or whenever your team has time to work on clearing technical debt.
 
+## Publishing to npmjs.com
+
+### prerequisites
+
+You’ll need an account on npmjs.com and that has access to this package.
+Account needs 2FA enabled for authorization & publishing.
+
+### Step 1 - Bump version
+
+Create a new branch in which you bump the version, in here you'll also need to update [CHANGELOG.md](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/blob/main/CHANGELOG.md). Move everything from [Unreleased] to the new version that you're creating. Using `npm version` you can bump the version.
+
+```
+npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
+```
+
+Push your new branch and create a PR, **wait for it being approved and merged before proceeding with the next steps.**
+
+### Step 2 - Create draft release
+
+Go to [releases](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/releases) and create a new draft release. Make sure the version number is the same as in step 1! In here you can also edit the release note and publish it.
+
+### Step 4 - publish!
+
+Once you've published the draft release a github workflow should kick off that will publish it on our [npmjs package](https://www.npmjs.com/package/eslint-config-mig-react-native)
+
 ## Contribution
 
 As stated in the Goals, this repository can be used as a platform to discuss and update our codestyling configuration. If you have a proposal:
