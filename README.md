@@ -93,7 +93,13 @@ Account needs 2FA enabled for authorization & publishing.
 
 ### Step 1 - Bump version
 
-Create a new branch in which you bump the version, in here you'll also need to update [CHANGELOG.md](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/blob/main/CHANGELOG.md). Move everything from [Unreleased] to the new version that you're creating. Using `npm version` you can bump the version.
+Create a new branch in which you bump the version and use the following naming convention:
+
+```
+version/1.2.3
+```
+
+In your new branch you'll also need to update [CHANGELOG.md](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/blob/main/CHANGELOG.md). Move everything from [Unreleased] to the new version that you're creating. Using `npm version` you can bump the version.
 
 ```
 npm version [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
