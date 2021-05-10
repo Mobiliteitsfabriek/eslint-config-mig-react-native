@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [1.1.3] - 2021-05-10
+
+### Removed
+
+- Remove `npm run test` from `npm-publish` workflow & bump version [@ThomasGoatITMedia](https://github.com/ThomasGoatITMedia) PR [#5](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/pull/5)
+
+
+## [1.1.2] - 2021-05-03
+
+### Removed
+
+- Remove `package.lock` and `yarn.lock` from `.gitignore` & bump version [@isilhir](https://github.com/isilhir) PR [#4](https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native/pull/4)
+
 ## [1.1.1] - 2021-04-14
 
 ### Added
