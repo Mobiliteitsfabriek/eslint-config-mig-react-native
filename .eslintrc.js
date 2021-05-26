@@ -145,7 +145,7 @@ module.exports = {
 
     // Sort props for JSX component
     'react/jsx-sort-props': [
-      'warn',
+      'error',
       {
         callbacksLast: true,
         ignoreCase: true,
