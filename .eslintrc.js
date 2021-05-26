@@ -142,6 +142,15 @@ module.exports = {
       'asc',
       { ignoreClassNames: false, ignoreStyleProperties: false },
     ],
+
+    // Sort props for JSX component
+    'react/jsx-sort-props': [
+      'error',
+      {
+        callbacksLast: true,
+        ignoreCase: true,
+      },
+    ],
   },
   settings: {
     'import/resolver': {
