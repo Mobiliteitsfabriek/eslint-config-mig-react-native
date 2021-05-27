@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.4] - 2021-05-27
+
+### Added
+
+- Added JSX sorted props: first props and then callbacks all in ascending order
+
 
 ## [1.1.3] - 2021-05-10
 
