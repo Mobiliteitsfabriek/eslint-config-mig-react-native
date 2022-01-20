@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/Mobiliteitsfabriek/eslint-config-mig-react-native.git"
   },
-  "version": "1.1.6",
+  "version": "1.1.5",
   "description": "eslint config for react native projects developed by the MIG",
   "main": "index.js",
   "scripts": {
