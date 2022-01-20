@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: ['@react-native-community', 'airbnb', 'airbnb/hooks', 'prettier'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'detox'],
+  plugins: ['@typescript-eslint', 'detox', 'simple-import-sort'],
   ignorePatterns: ['*.graphql', 'graphql.ts', 'src/locales/'],
   globals: { React: true, JSX: true },
   env: { jest: true },
@@ -13,10 +13,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       2,
       {
-        devDependencies: [
-          '**/*.{stories,story}.[jt]s?(x)',
-          '**/*.spec.[jt]s?(x)',
-        ],
+        devDependencies: ['**/*.{stories,story}.[jt]s?(x)', '**/*.spec.[jt]s?(x)'],
       },
     ],
 
@@ -97,13 +94,7 @@ module.exports = {
     'react/sort-comp': [
       2,
       {
-        order: [
-          'static-variables',
-          'static-methods',
-          'lifecycle',
-          'everything-else',
-          'render',
-        ],
+        order: ['static-variables', 'static-methods', 'lifecycle', 'everything-else', 'render'],
         groups: {
           lifecycle: [
             'displayName',
@@ -137,22 +128,11 @@ module.exports = {
     ],
 
     // Sort imports in a default alphabetic order
-    'sort-imports': [
-      'error', {
-        'ignoreCase': false,
-        'ignoreDeclarationSort': false,
-        'ignoreMemberSort': false,
-        'memberSyntaxSortOrder': ["none", "all", "multiple", "single"],
-        'allowSeparatedGroups': false
-      }
-    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
 
     // Sort RN styles, this will sort typed stylenames and style props in alphabetic order
-    'react-native/sort-styles': [
-      'error',
-      'asc',
-      { ignoreClassNames: false, ignoreStyleProperties: false },
-    ],
+    'react-native/sort-styles': ['error', 'asc', { ignoreClassNames: false, ignoreStyleProperties: false }],
 
     // Sort props for JSX component
     'react/jsx-sort-props': [
