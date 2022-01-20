@@ -136,6 +136,17 @@ module.exports = {
       },
     ],
 
+    // Sort imports in a default alphabetic order
+    'sort-imports': [
+      'error', {
+        'ignoreCase': false,
+        'ignoreDeclarationSort': false,
+        'ignoreMemberSort': false,
+        'memberSyntaxSortOrder': ["none", "all", "multiple", "single"],
+        'allowSeparatedGroups': false
+      }
+    ],
+
     // Sort RN styles, this will sort typed stylenames and style props in alphabetic order
     'react-native/sort-styles': [
       'error',

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.5] - 2022-01-19
+- Added sorted imports: Sort imports using the recommended sort rule (https://eslint.org/docs/rules/sort-imports)
+
 ## [1.1.4] - 2021-05-27
 
 ### Added
