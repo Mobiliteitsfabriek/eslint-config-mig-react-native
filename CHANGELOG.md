@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [1.2] - 2025-05-09
+
+- Updated ESLint to version 8.57.1
+
 ## [1.1.6] - 2022-01-19
 
 - Replace sort-imports with simple import sorting plugin to prevent rule conflict and allow autofix (https://github.com/lydell/eslint-plugin-simple-import-sort)

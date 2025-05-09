@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
-  extends: ['@react-native-community', 'airbnb', 'airbnb/hooks', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'detox', 'simple-import-sort'],
+  plugins: ['react', 'react-native', '@typescript-eslint', 'detox', 'simple-import-sort'],
   ignorePatterns: ['*.graphql', 'graphql.ts', 'src/locales/'],
   globals: { React: true, JSX: true },
   env: { jest: true },
