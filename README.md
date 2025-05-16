@@ -21,7 +21,7 @@ yarn add -D eslint-config-mig-react-native
 Install the package peer dependencies as development depency (if you don't have them allready).
 
 ```bash
-yarn add -D eslint eslint-config-prettier eslint-plugin-detox eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks prettier prettier-eslint-cli @react-native-community/eslint-config typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-simple-import-sort
+yarn add -D eslint eslint-config-prettier eslint-plugin-detox eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks prettier prettier-eslint-cli typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-simple-import-sort
 ```
 
 ## ESLint configuration
